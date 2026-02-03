@@ -1,0 +1,36 @@
+variable "aws_region" {
+  type    = string
+  default = "us-east-2"
+}
+
+variable "vpc_cidr" {
+  type    = string
+  default = "10.0.0.0/16"
+}
+
+variable "subnet_cidr" {
+  type    = string
+  default = "10.0.1.0/24"
+}
+
+variable "availability_zone" {
+  type    = string
+  default = "us-east-2a"
+}
+
+variable "ami_id" {
+  description = "AMI ID for EC2"
+  type        = string
+  default     = "ami-03ea746da1a2e36e7" # Amazon Linux 2 (ap-south-1)
+}
+
+variable "instance_type" {
+  type    = string
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  description = "EC2 key pair name"
+  type        = string
+  default = "keypair"
+}
