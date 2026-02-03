@@ -21,7 +21,7 @@ variable "availability_zone" {
 variable "ami_id" {
   description = "AMI ID for EC2"
   type        = string
-  default     = "ami-0f5ee92e2d63afc18" # Amazon Linux 2 (ap-south-1)
+  default     = "ami-03ea746da1a2e36e7" # Amazon Linux 2 (ap-south-1)
 }
 
 variable "instance_type" {
@@ -32,5 +32,5 @@ variable "instance_type" {
 variable "key_name" {
   description = "EC2 key pair name"
   type        = string
-  default = "keypair.pem"
+  default = "keypair"
 }
