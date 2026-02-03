@@ -15,7 +15,7 @@ variable "subnet_cidr" {
 
 variable "availability_zone" {
   type    = string
-  default = "ap-south-1a"
+  default = "us-east-2a"
 }
 
 variable "ami_id" {
