@@ -25,4 +25,3 @@ terraform apply
 - Verify EC2 instance, VPC, subnet, route table, and security group in AWS Console.
 - Check EC2 public IP and connectivity
 
-### Loom Video
