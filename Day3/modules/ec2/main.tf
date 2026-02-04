@@ -7,35 +7,7 @@ resource "aws_instance" "this" {
     var.security_group_id
   ]
 
-  user_data = <<-EOF
-    #!/bin/bash
-    yum update -y
-
-    curl -fsSL https://rpm.nodesource.com/setup_18.x | bash -
-    yum install -y nodejs git
-
-    npm install -g pm2
-
-    cd /opt
-    npx create-strapi-app@latest my-strapi --quickstart --no-run
-
-    cd my-strapi
-
-    cat <<EOT > config/server.js
-    module.exports = ({ env }) => ({
-      host: '0.0.0.0',
-      port: 1337,
-      app: {
-        keys: env.array('APP_KEYS'),
-      },
-    });
-    EOT
-
-    pm2 start npm --name strapi -- run develop
-    pm2 save
-  EOF
-
-  tags = {
+    tags = {
     Name = "Strapi-EC2"
   }
 }
