@@ -135,7 +135,7 @@ yarn develop
 | Stop server      | `Ctrl + C`     |
 
 ---
-# Preview
+## Preview
 
 
 
