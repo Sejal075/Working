@@ -135,5 +135,10 @@ yarn develop
 | Stop server      | `Ctrl + C`     |
 
 ---
+# Preview
+
+
+
+---
 
 ✅ Strapi should now be running successfully on your local machine.
