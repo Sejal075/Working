@@ -5,6 +5,7 @@ variable "aws_region" {
 
 variable "env" {
   description = "Environment name"
+  default = "dev"
 }
 
 variable "vpc_cidr" {
@@ -14,10 +15,12 @@ variable "vpc_cidr" {
 
 variable "public_subnet_cidr" {
   description = "Public subnet CIDR"
+  default = "10.0.1.0/24"
 }
 
 variable "private_subnet_cidr" {
   description = "Private subnet CIDR"
+  default = "10.0.2.0/24"
 }
 
 variable "instance_type" {
@@ -32,6 +35,7 @@ variable "key_name" {
 
 variable "allowed_ssh_cidr" {
   description = "Your IP for SSH"
+  default = ""
 }
 
 variable "strapi_port" {
