@@ -14,3 +14,11 @@ Working Repo For Pearl Thoughts
 - Verify Resources
 ### Remark: Completed
 ---
+## Day 3 : Terraform EC2 Provisioning with Strapi Installation
+- Provision EC2 instance using Terraform
+- Install Node.js and Yarn using Terraform provisioning
+- Install Strapi on EC2 using Terraform user_data
+- Verify Strapi service on the provisioned EC2 instance
+
+### Remark: Completed
+---
