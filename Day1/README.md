@@ -137,7 +137,12 @@ yarn develop
 ---
 ## Preview
 
+On Linux
+<img width="1366" height="724" alt="Screenshot 1" src="https://github.com/user-attachments/assets/29f5a12f-1ee3-4e51-8041-29f9a8d64994" />
 
+
+On Web
+<img width="1366" height="674" alt="Screenshot 5" src="https://github.com/user-attachments/assets/3aaf629a-e465-4cbc-8024-87ab5d1f29ef" />
 
 ---
 
