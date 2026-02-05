@@ -1,6 +1,6 @@
 resource "aws_instance" "this" {
   ami           = "ami-0d5eff06f840b45e9"   # Amazon Linux 2 (us-east-2)
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   key_name      = var.key_name
 
   vpc_security_group_ids = [
